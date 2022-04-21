@@ -5,9 +5,7 @@ a {
     height: 50vh;
     max-height: fit-content;
 }
-.btn {
-    
-}
+
 .sobre {
     padding: 2rem;
 }
@@ -19,10 +17,6 @@ a {
     margin: 0;
     margin-bottom: 2rem;
 }
-section {
-    padding-bottom: 2rem;
-    min-height: 50vh;
-}
 .ultimo-mes-h2 {
     margin-bottom: 0;
 }
@@ -31,6 +25,7 @@ section {
 }
 .fit-height {
     height: fit-content;
+    padding-top: 2.5rem;
     padding-bottom: 2rem;
     
 }
