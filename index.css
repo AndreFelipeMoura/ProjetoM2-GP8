@@ -1,0 +1,39 @@
+a {
+    text-decoration: none;
+}
+.hero {
+    height: 50vh;
+    max-height: fit-content;
+}
+.btn {
+    
+}
+.sobre {
+    padding: 2rem;
+}
+.titulo {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.sobre-btn {
+    margin: 0;
+    margin-bottom: 2rem;
+}
+section {
+    padding-bottom: 2rem;
+    min-height: 50vh;
+}
+.ultimo-mes-h2 {
+    margin-bottom: 0;
+}
+.fit-width {
+    max-width: fit-content;
+}
+.fit-height {
+    height: fit-content;
+    padding-bottom: 2rem;
+    
+}
+.margin-zero {
+    margin: 0;
+}
