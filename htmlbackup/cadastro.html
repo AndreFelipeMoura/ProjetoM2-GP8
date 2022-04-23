@@ -22,39 +22,44 @@
     <section class="h-100 w-100 d-flex justify-content-center bg-light">
       <div class="form-ctn d-flex flex-column align-self-center w-25 border pb-5 rounded rounded-3 shadow">
         <h1 class="d-flex align-self-center text-muted">LOGO</h1>
-        <form class="w-75 align-self-center">
+
+
+        <form class="w-75 align-self-center needs-validation" novalidate>
           
           <!--nome-->
           <div class="d-flex">
-            <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="nome" placeholder="Nome">
+            <div class="form-floating mb-3 me-2">
+              <input type="text" class="form-control" id="nome" placeholder="Nome" required>
               <label for="nome">Nome</label>
+              <div class="valid-feedback">
+                Looks good!
+              </div>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
               <label for="sobrenome">Sobrenome</label>
             </div>
           </div>
           
           <!--email-->
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
             <label for="email">Email</label>
           </div>
 
           <!--senha-->
           <div class="form-floating">
-            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha">
+            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha" required>
             <label for="senha">Senha</label>            
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita Senha">
+            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita Senha" required>
             <label for="repitaSenha">Repita a senha</label>
           </div>
 
           <!--rg-->
           <div class="form-floating mb-3" >
-            <input type="number" class="form-control mb-1" id="rg" placeholder="RG">
+            <input type="number" class="form-control mb-1" id="rg" placeholder="RG" required> 
             <label for="rg">RG</label>
           </div>
           
@@ -62,12 +67,12 @@
           <!--cep-->
           <div class="d-flex">            
             <div class="form-floating d-flex">
-                <input type="number" class="form-control" placeholder="CEP (5 Digitos)"  id="cep1">
+                <input type="number" class="form-control" placeholder="CEP (5 Digitos)"  id="cep1" required>
                 <label for="cep1">CEP (5 Digitos)</label>     
             </div>                       
               <p class="p-3" >-</p>
             <div class="form-floating d-flex">
-              <input type="number" class="form-control" placeholder="CEP (3 Digitos)"  id="cep2">
+              <input type="number" class="form-control" placeholder="CEP (3 Digitos)"  id="cep2" required>
               <label for="cep2">CEP (3 Digitos)</label>
             </div>            
           </div>
@@ -76,11 +81,11 @@
             <input class="form-control" type="text" value="Rua" aria-label="readonly input example" readonly>
             <div class="w-100">            
               <div class="form-floating d-flex">
-                  <input type="number" class="form-control" placeholder="Número"  id="numero">
+                  <input type="number" class="form-control" placeholder="Número"  id="numero" required>
                   <label for="numero">Número</label>     
               </div> 
               <div class="form-floating d-flex">
-                <input type="number" class="form-control" placeholder="Complemento"  id="complemento">
+                <input type="number" class="form-control" placeholder="Complemento"  id="complemento" required>
                 <label for="complemento">Complemento</label>
             </div>          
             <input class="d-flex form-control" type="text" value="Bairro" aria-label="readonly input example" readonly>
@@ -90,7 +95,7 @@
 
           <!--enviar-->
           <button type="submit" class="btn btn-warning mt-3">Enviar</button>
-          </form>
+        </form>
         
       </div>
     </section>
