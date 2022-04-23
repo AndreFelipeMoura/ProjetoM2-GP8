@@ -19,38 +19,79 @@
   <body class="vh-100 d-flex align-center justify-content-center bg-light">
     
     <!--CADASTRO-->
-    <section
-      class="h-100 w-100 d-flex justify-content-center bg-light"
-    >
-      <div
-        class="form-ctn d-flex flex-column align-self-center w-25 h-75 border rounded rounded-3 shadow"
-      >
+    <section class="h-100 w-100 d-flex justify-content-center bg-light">
+      <div class="form-ctn d-flex flex-column align-self-center w-25 border pb-5 rounded rounded-3 shadow">
         <h1 class="d-flex align-self-center text-muted">LOGO</h1>
         <form class="w-75 align-self-center">
-            <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">Insira seu email.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-                <div id="emailHelp" class="form-text">Uma senha com 8 a 20 caracteres sendo pelo menos um caractére especial, um número, uma letra maiúscula e uma minúscula.</div>
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-              </div>
-              <button type="submit" class="btn btn-warning">Submit</button>
+          
+          <!--nome-->
+          <div class="d-flex">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nome" placeholder="Nome">
+              <label for="nome">Nome</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome">
+              <label for="sobrenome">Sobrenome</label>
+            </div>
+          </div>
+          
+          <!--email-->
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com">
+            <label for="email">Email</label>
+          </div>
+
+          <!--senha-->
+          <div class="form-floating">
+            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha">
+            <label for="senha">Senha</label>            
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita Senha">
+            <label for="repitaSenha">Repita a senha</label>
+          </div>
+
+          <!--rg-->
+          <div class="form-floating mb-3" >
+            <input type="number" class="form-control mb-1" id="rg" placeholder="RG">
+            <label for="rg">RG</label>
+          </div>
+          
+
+          <!--cep-->
+          <div class="d-flex">            
+            <div class="form-floating d-flex">
+                <input type="number" class="form-control" placeholder="CEP (5 Digitos)"  id="cep1">
+                <label for="cep1">CEP (5 Digitos)</label>     
+            </div>                       
+              <p class="p-3" >-</p>
+            <div class="form-floating d-flex">
+              <input type="number" class="form-control" placeholder="CEP (3 Digitos)"  id="cep2">
+              <label for="cep2">CEP (3 Digitos)</label>
+            </div>            
+          </div>
+
+          <div class="d-flex flex-column">
+            <input class="form-control" type="text" value="Rua" aria-label="readonly input example" readonly>
+            <div class="w-100">            
+              <div class="form-floating d-flex">
+                  <input type="number" class="form-control" placeholder="Número"  id="numero">
+                  <label for="numero">Número</label>     
+              </div> 
+              <div class="form-floating d-flex">
+                <input type="number" class="form-control" placeholder="Complemento"  id="complemento">
+                <label for="complemento">Complemento</label>
+            </div>          
+            <input class="d-flex form-control" type="text" value="Bairro" aria-label="readonly input example" readonly>
+            <input class="form-control" type="text" value="Cidade" aria-label="readonly input example" readonly>
+            <input class="form-control" type="text" value="Estado" aria-label="readonly input example" readonly>  
+          </div>
+
+          <!--enviar-->
+          <button type="submit" class="btn btn-warning mt-3">Enviar</button>
           </form>
-        <div class="d-flex justify-content-center">
-          <button
-            type="button"
-            class="margin-zero sobre-btn d-flex justify-content-center btn btn-outline-warning align-items-center"
-          >
-            Saiba mais
-          </button>
-        </div>
+        
       </div>
     </section>
 
@@ -64,11 +105,11 @@
 </body>
 <!-- Página de cadastro na lista de espera
 ● Deve conter formulário com:
-○ Nome;
-○ E-mail;
-○ Senha;
-○ Confirmação de senha;
-○ RG;
-○ CEP (que completa os demais campos do endereço com consulta à API e
+○ -Nome;
+○ -E-mail;
+○ -Senha;
+○ -Confirmação de senha;
+○ -RG;
+○ -CEP (que completa os demais campos do endereço com consulta à API e
 trata erros);
-○ Campos de endereço (estado, cidade, bairro, rua, número, complemento). -->
+○ -Campos de endereço (estado, cidade, bairro, rua, número, complemento). -->
