@@ -5,4 +5,4 @@
 // RG - 8.797.606-0 Oito numeros ,com "traço - " no penultimo para validar.(cadastro)
 // Cep - Apicep completa os demais campos abaixo: (API ViaCEP - https://viacep.com.br/)(cadastro)
 // Campos de endereço - (estado, cidade, bairro, rua, número, complemento).(cadastro)
-// prompts/alerts
+// prompts/alerts.
