@@ -25,12 +25,12 @@
         
 
 
-        <form class="w-75 d-flex flex-column align-self-center needs-validation" novalidate>
+        <form class="w-75 d-flex flex-column align-self-center needs-validation" id="form-cadastro" novalidate>
           <h2 class="mx-auto">Cadastre-se</h2>
           <!--nome-->
           <div class="d-flex">
             <div class="form-floating mb-3 me-2">
-              <input type="text" class="form-control" id="nome" placeholder="Nome" required>
+              <input type="text" class="form-control" id="nome" placeholder="Nome" >
               <label for="nome">Nome</label>
               <div class="valid-feedback">
                 Looks good!
@@ -96,6 +96,9 @@
 
           <!--enviar-->
           <button type="submit" class="btn btn-warning mt-3">Enviar</button>
+          <div class="alert alert-danger d-none">
+            Preencha o campo : <span id="campo-erro"></span>!
+          </div>
         </form>
         
       </div>
@@ -123,6 +126,7 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
   <script src="../script/cadastro.js"></script>
+  <script src="../script/cadastrovalid.js"></script>
 
   
 </body>
