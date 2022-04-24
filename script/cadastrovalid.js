@@ -21,11 +21,11 @@
   
   $('#form-cadastro').submit(function(){
     let nome = $('#nome');
-    let sobrenome = $('#sobrenome')
+    let sobrenome = $('#sobrenome');
     let email = $('#email');
     let senha = $('#senha');
-    let repitaSenha = $('#repitaSenha')
-    let rg = $('#rg')
+    let repitaSenha = $('#repitaSenha');
+    let rg = $('#rg');
     let erro = $('.alert');
     let campo = $('#campo-erro');
     // let cep1 = $('#cep1');
