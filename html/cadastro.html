@@ -44,7 +44,7 @@
           
           <!--email-->
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="nome@exemplo.com" required>
             <label for="email">Email</label>
           </div>
 
@@ -60,7 +60,7 @@
 
           <!--rg-->
           <div class="form-floating mb-3" >
-            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" > 
+            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" required> 
             <label for="rg">RG</label>
           </div>
           
@@ -95,7 +95,7 @@
           </div>
 
           <!--enviar-->
-          <button type="submit" class="btn btn-warning mt-3">Enviar</button>
+          <button type="submit" id="submit" class="btn btn-warning mt-3">Enviar</button>
           <div class="alert alert-danger d-none">
             Preencha o campo: <span id="campo-erro"></span>!
           </div>
@@ -128,6 +128,7 @@
   <script src="../script/cadastro.js"></script>
   <script src="../script/cadastrovalid.js"></script>
   <script src="../script/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+  <!-- <script src="../script/regex.js"></script> -->
 
   
 </body>
