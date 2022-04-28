@@ -10,10 +10,10 @@ $(document).ready(function() {
     }
     
     //Quando o campo cep perde o foco.
-    $("#cep2").blur(function() {
+    $("#cep1").blur(function() {
         //Soma val. dos inputs cep.
-        var cep = $("#cep1").val().toString() + $("#cep2").val().toString();
-        
+        // var cep = $("#cep1").val().toString() + $("#cep2").val().toString();
+        var cep = $("#cep1").val().toString();
         
         //Verifica se campo cep possui valor informado.
         if (cep != "") {

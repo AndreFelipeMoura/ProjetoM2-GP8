@@ -28,7 +28,7 @@
     let rg = $('#rg');
     let erro = $('.alert');
     let campo = $('#campo-erro');
-    // let cep1 = $('#cep1');
+    let cep1 = $('#cep1');
     // let cep2 = $('cep2');
     
 
@@ -95,14 +95,14 @@
     }
 
 
-    // if (cep1.val() == ''){
-    //   erro.removeClass('d-none');
-    //   campo.html('CEP com 5 dígitos iniciais');
-    //   cep1.focus();
-    //   cep1.addClass('is-invalid');
+    if (cep1.val() == ''){
+      erro.removeClass('d-none');
+      campo.html('CEP');
+      cep1.focus();
+      cep1.addClass('is-invalid');
       
-    //   return false;
-    // }
+      return false;
+    }
 
     // if (cep2.val() == ''){
     //   erro.removeClass('d-none');
