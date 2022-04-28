@@ -33,9 +33,11 @@
       >
         <h1><a class="brand link-light text-decoration-none " href="../index.html"><i class="bi bi-box"></i>FrontEnders</a></h1>
         
+
         <form class="needs-validation " novalidate></form>
         <div
           class="d-flex w-50 justify-content-end align-items-center text-decoration-none"
+
         >
           
             <li class="nav-item">
@@ -58,6 +60,8 @@
             <button type="submit" class=" align-items-center my-auto btn btn-lg btn-secondary ms-3">Entrar</button>
           </li>
         </div>
+
+       
     </form>   
       </div>
     </nav>
@@ -73,7 +77,7 @@
           <p class="mx-auto">Insira seu email cadastrado para receber sua senha por email.</p>
   
   
-          <form class="w-75 align-self-center needs-validation" novalidate>
+          <form class="w-75 align-self-center needs-validation" id="form-recupera" novalidate>
             <!--email-->
             <div class="form-floating mb-3">
               <input type="email" class="form-control text-center mx-auto" id="email" placeholder="nome@exemplo.com" required>
@@ -82,6 +86,10 @@
   
             <!--enviar-->
             <button type="submit" class="d-flex mx-auto btn btn-warning mb-3">Enviar</button>
+
+            <div class="alert alert-danger d-none">
+              Preencha o campo: <span id="campo-erro"></span>!
+            </div>
           </form>
           <div class="d-flex mx-auto flex-column">
               <a class="align-self-center text-decoration-none text-secondary fs-6 lh-2" href="./login.html">Eu lembro minha senha.</a>
@@ -112,5 +120,11 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+
+  <script src="../script/recupera-senha.js"></script>
+  
   </body>
 </html>
