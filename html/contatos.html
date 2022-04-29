@@ -46,14 +46,18 @@
         </header>
         <main>
             <section>
-               <div>
-                <h1>Fale conosco:</h1>
-                <label for="nome">Nome:</label>
-                <input type="text">
-                <label for="mensagem">Escreva aqui a sua mensagem:</label>
-                <textarea rows="7" cols="50">
-                </textarea>
-            </div>
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleFormControlName1" class="form-label">Nome:</label>
+                        <input class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+                        <label for="exampleFormControlInput1" class="form-label">E-mail:</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </form>
             <div>
                 <h1>Se preferir,</h1>
                 <h3>Dá um toque por aqui:</h3>
