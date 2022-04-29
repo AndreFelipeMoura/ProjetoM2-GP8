@@ -14,7 +14,6 @@ $(document).ready(function() {
         //Soma val. dos inputs cep.
         var cep = $("#cep1").val().toString()
         
-        
         //Verifica se campo cep possui valor informado.
         if (cep != "") {
 
