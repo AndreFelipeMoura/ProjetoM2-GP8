@@ -29,37 +29,39 @@
           <!--nome-->
           <div class="d-flex">
             <div class="form-floating mb-3 me-2">
-              <input type="text" class="form-control" id="nome" placeholder="Nome" >
-              <label for="nome">Nome</label>
+              
+              <input type="text" class="form-control" id="nome" placeholder="Nome Completo" >
+              <label for="nome">Nome Completo</label>
+              <!-- <label for="nome"></label> -->
               <div class="valid-feedback">
                 Looks good!
               </div>
             </div>
             <div class="form-floating mb-3">
-              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" required>
+              <input type="text" class="form-control" id="sobrenome" placeholder="Sobrenome" >
               <label for="sobrenome">Sobrenome</label>
             </div>
           </div>
           
           <!--email-->
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            <input type="email" class="form-control" id="email" name="email" placeholder="example@email.com" >
             <label for="email">Email</label>
           </div>
 
           <!--senha-->
           <div class="form-floating">
-            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha" required>
+            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha" >
             <label for="senha">Senha</label>            
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita a Senha" required>
+            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita a Senha" >
             <label for="repitaSenha">Repita a senha</label>
           </div>
 
           <!--rg-->
           <div class="form-floating mb-3" >
-            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" required> 
+            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" > 
             <label for="rg">RG</label>
           </div>
           
@@ -67,8 +69,8 @@
           <!--cep-->
           <!-- <div class="d-flex">             -->
             <div class="form-floating d-flex">
-                <input type="number" class="form-control" onkeypress="$(this).mask('00000000')" placeholder="CEP (5 Digitos)"  id="cep1" required>
-                <label for="cep1">CEP (5 Digitos)</label>     
+                <input type="number" class="form-control" onkeypress="$(this).mask('00000000')" placeholder="CEP"  id="cep1" >
+                <label for="cep1">CEP (8 Digitos)</label>     
             </div>                       
               <!-- <p class="p-3" >-</p> -->
             <!-- <div class="form-floating d-flex">
@@ -81,11 +83,11 @@
             <input class="form-control" type="text" id="rua" value="Rua" aria-label="readonly input example" readonly>
             <div class="w-100">            
               <div class="form-floating d-flex">
-                  <input type="number" class="form-control" placeholder="Número"  id="numero" required>
+                  <input type="number" class="form-control" placeholder="Número"  id="numero" >
                   <label for="numero">Número</label>     
               </div> 
               <div class="form-floating d-flex">
-                <input type="number" class="form-control" placeholder="Complemento"  id="complemento" required>
+                <input type="number" class="form-control" placeholder="Complemento"  id="complemento" >
                 <label for="complemento">Complemento</label>
             </div>          
             <input class="d-flex form-control" type="text" id="bairro" value="Bairro" aria-label="readonly input example" readonly>
@@ -134,11 +136,16 @@
             crossorigin="anonymous"></script>
   <script src="../script/cadastro.js"></script>
   <script src="../script/cadastrovalid.js"></script>
+  <script src="../script/cadastrovalid2.js"></script>
   <script src="../script/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
-  <!-- <script src="../script/regex.js"></script> -->
+  <script src="../script/jquery.validate.min.js"></script>
+  <script src="../script/additional-methods.js"></script>
+  <script src="../script/messages_pt_BR.js"></script>
+  
 
   
 </body>
+</html>
 <!-- Página de cadastro na lista de espera
 ● Deve conter formulário com:
 ○ -Nome;
