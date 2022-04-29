@@ -51,17 +51,17 @@
 
           <!--senha-->
           <div class="form-floating">
-            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha" >
+            <input type="password" class="form-control mb-1" id="senha" placeholder="Senha" minlength="8">
             <label for="senha">Senha</label>            
           </div>
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita a Senha" >
+            <input type="password" class="form-control" id="repitaSenha" placeholder="Repita a Senha" equalTo="#senha">
             <label for="repitaSenha">Repita a senha</label>
           </div>
 
           <!--rg-->
           <div class="form-floating mb-3" >
-            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" > 
+            <input type="text" class="form-control mb-1" id="rg" onkeypress="$(this).mask('0.000.000-0')" placeholder="RG" number="#rg"> 
             <label for="rg">RG</label>
           </div>
           
