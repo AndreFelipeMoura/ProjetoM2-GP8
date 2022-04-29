@@ -11,16 +11,16 @@ $(document).ready(function(){
             email:{
                 // required:true,
                 email: true
-            }
-            // senha:{
-            //     required: true,
-            //     minlength: 8
-            // },
-            // repitaSenha:{
-            //     required: true,
-            //     equalTo: '#senha'
+            },
+            senha:{
+                senha: true
+                
+            },
+            repitaSenha:{
+                required: true,
+                equalTo: '#senha'
 
-            // }            
+            }            
         }
     })
 })
