@@ -17,3 +17,8 @@ $('#form-recupera').submit(function () {
 
     return true;
 });
+
+$(document).ready(function(){
+    $('#form-recupera').validate({
+    })
+})
