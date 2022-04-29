@@ -28,3 +28,8 @@ $('#form-login').submit(function(){
 
       return true;
   });
+
+  $(document).ready(function(){
+    $('#form-login').validate({
+    })
+})

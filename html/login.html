@@ -25,13 +25,13 @@
 
         <!--email-->
         <div class="form-floating mb-3">
-          <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" required>
+          <input type="email" class="form-control" id="email" placeholder="nome@exemplo.com" >
           <label for="email">Email</label>
         </div>
-
+        
         <!--senha-->
         <div class="form-floating">
-          <input type="password" class="form-control mb-3" id="senha" placeholder="Senha" required>
+          <input type="password" class="form-control mb-3" id="senha" placeholder="Senha" minlength="8">
           <label for="senha">Senha</label>
         </div>
 
@@ -75,9 +75,14 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <script src="../script/login.js"></script>
+  <script src="../script/jQuery-Mask-Plugin-master/dist/jquery.mask.min.js"></script>
+  <script src="../script/jquery.validate.min.js"></script>
+  <script src="../script/additional-methods.js"></script>
+  <script src="../script/messages_pt_BR.js"></script>
 
 
 </body>
+</html>
 <!-- Página de cadastro na lista de espera
 ● Deve conter formulário com:
 ○ -Nome;
